@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/indexTextView"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="193dp"
+        android:layout_marginLeft="193dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginRight="193dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/_1_3"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewer"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/_1_3"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/previousButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indexTextView"
+        app:srcCompat="@drawable/image1" />
+
+    <Button
+        android:id="@+id/previousButton"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#00BCD4"
+        android:text="@string/previous"
+        app:layout_constraintStart_toStartOf="@+id/imageViewer"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewer" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#8F69D1"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewer"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
